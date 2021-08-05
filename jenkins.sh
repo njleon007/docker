@@ -37,5 +37,6 @@ if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
   exec java -Duser.home="$JENKINS_HOME" "${java_opts_array[@]}" -jar ${JENKINS_WAR} "${jenkins_opts_array[@]}" "$@"
 fi
 
+echo "njleon007 test"
 # As argument is not jenkins, assume user want to run his own process, for example a `bash` shell to explore this image
 exec "$@"
